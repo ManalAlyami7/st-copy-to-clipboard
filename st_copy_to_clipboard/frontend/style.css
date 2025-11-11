@@ -1,30 +1,40 @@
-.st-copy-to-clipboard-btn {
+/* Style ONLY the copy button with icon */
+#copy-button {
   display: inline-flex;
-  -moz-box-align: center;
   align-items: center;
-  -moz-box-pack: center;
   justify-content: center;
-  font-weight: 400;
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
-  min-height: 38.4px;
-  margin: 0px;
-  line-height: 1.6;
-  color: inherit;
-  width: auto;
-  user-select: none;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(49, 51, 63, 0.2);
+  background: linear-gradient(135deg, #d4af37, #b8941f) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 10px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  width: 46px !important;
+  height: 46px !important;
+  min-height: 46px !important;
+  margin: 0;
   cursor: pointer;
+  user-select: none;
+  transition: all 0.25s ease !important;
 }
 
-.st-copy-to-clipboard-btn:hover {
-  border-color: rgb(255, 75, 75);
-  color: rgb(255, 75, 75);
+#copy-button img {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
-.st-copy-to-clipboard-btn:active {
-  border-color: rgb(255, 75, 75);
-  background-color: rgb(255, 75, 75);
-  color: rgb(255, 255, 255);
+#copy-button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
+  background: linear-gradient(135deg, #b8941f, #9d7a1a) !important;
+}
+
+#copy-button:active {
+  transform: scale(0.97);
+  background: linear-gradient(135deg, #b8941f, #9d7a1a) !important;
+}
+
+#copy-button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.35) !important;
 }
